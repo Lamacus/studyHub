@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
+  <title>StudyHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<div>
+  <div class="study">
+    <header class="study-header">
+      <img src="./img/logo.png" alt="" class="study-header__logo" />
+      <div class="study-header__list">
+        <span onclick="showSuccessToast();" class="study-header__item fix-btn">Cẩm nang sinh viên</span>
+        <span class="study-header__item open-modal-btn">Tài liệu học tập</span>
+        <span onclick="showSuccessToast();" class="study-header__item">Góc Review</span>
+        <span onclick="showSuccessToast();" class="study-header__item">Câu hỏi thường gặp</span>
+        <i class="fa-solid fa-magnifying-glass study-header__search"></i>
+      </div>
+      <!-- Pop up -->
+    </header>
+    <div class="study-sub">
+      <div class="study-sub__quote">
+        <p class="study-sub__desc">
+          Tất cả chúng ta đều có cuộc đời riêng để theo đuổi, giấc mơ riêng để
+          dệt nên, và tất cả chúng ta đều có sức mạnh để biến mơ ước trở thành
+          hiện thực, miễn là chúng ta giữ vững niềm tin
+        </p>
+        <div class="study-sub__unique">Đại học đừng học đại</div>
+        <!-- Record -->
+        <div class="music">
+          <span class="music-header">Bài giảng nghe nhiều nhất</span>
+          <div class="music-thumb">
+            <img src="./img/kdqt.jpeg" alt="" />
+          </div>
+          <h3 class="music-name">Name Record File</h3>
+          <input type="range" name="range" id="range" class="range" />
+          <audio src="./music/holo.mp3" id="song"></audio>
+          <div class="timer">
+            <div class="duration">2:10</div>
+            <div class="remaining">-3:10</div>
+          </div>
+          <div class="controls">
+            <ion-icon name="infinite-outline" class="play-infinite"></ion-icon>
+            <ion-icon name="play-back" class="play-back"></ion-icon>
+            <div class="play">
+              <div class="player-inner">
+                <ion-icon name="play" class="play-icon"></ion-icon>
+              </div>
+            </div>
+            <ion-icon name="play-forward" class="play-forward"></ion-icon>
+            <ion-icon name="repeat-outline" class="play-repeat"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="study-sub__blog">
+        <img src="./img/chooseUniversity.jpeg" alt="" class="study-sub__picture" />
+        <img src="./img/cv.jpg" alt="" class="study-sub__picture" />
+        <img src="./img/house.jpeg" alt="" class="study-sub__picture" />
+        <img src="./img/podcast.jpg" alt="" class="study-sub__picture" />
+        <div onclick="showErrorToast();" class="study-sub__life">Blog cuộc sống</div>
+      </div>
+    </div>
+  </div>
+  <div class="exam">
+    <span class="exam__header">Hot <i class="fa-solid fa-fire"></i>Đề thi tài liệu qua các năm</span>
+    <ul class="exam__list">
+      <li class="exam__item">Nghiệp vụ ngoại thương KTK44</li>
+      <li class="exam__item">Kinh tế quốc tế QTK44</li>
+      <li class="exam__item">Chủ nghĩa xã hội khoa học QTK45</li>
+      <li class="exam__item">Pháp luật đại cương QTK46</li>
+      <li class="exam__item">Xem thêm ...</li>
+    </ul>
+  </div>
+  <div class="footer">
+    <img src="./img/logo.png" alt="" class="study-header__logo footer__logo" />
+    <div class="footer__about">
+      <span class="footer__quote">Về chúng tôi</span>
+      <p class="footer__desc">
+        Dự án thư viện học tập cung cấp cho sinh viên và các bạn học sinh tài
+        liệu hữu ích và thông tin giá trị để tăng cường kiến thức và kỹ năng
+        của họ. Bằng cách cung cấp các bài giảng, slide và các tài liệu tham
+        khảo, dự án này đóng góp vào việc nâng cao chất lượng giáo dục và hỗ
+        trợ cho việc học tập hiệu quả hơn. Đồng thời, chúng tôi cũng cung cấp
+        các blog đời sống và cẩm nang sinh viên để giúp họ phát triển các kỹ
+        năng mềm, tạo động lực và hướng dẫn cho sinh viên cách sống đúng đắn.
+        Dự án này đóng góp vào sự phát triển toàn diện của sinh viên và học
+        sinh.
+      </p>
+    </div>
+    <div class="footer-contact">
+      <p class="footer-contact__connect">Liên hệ chúng tôi</p>
+      <div class="footer-contact__social">
+        <i class="fa-brands fa-facebook footer-social__item"></i>
+        <i class="fa-brands fa-instagram footer-social__item"></i>
+        <i class="fa-solid fa-envelope footer-social__item"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Pop up -->
+  <div class="modal hide">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <p>Tổng hợp tài liệu</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="modal__body">
+        <h2>Mục lục:</h2>
+        <ul class="modal__list">
+          <li class="modal__item">Quản trị kinh doanh</li>
+          <li class="modal__item">Công nghệ thông tin</li>
+          <li class="modal__item">Ngôn ngữ Anh</li>
+          <li class="modal__item">Tài chính</li>
+        </ul>
+      </div>
+      <div class="modal__body">
+        <h2>Bài giảng:</h2>
+        <ul class="modal__list">
+          <li class="modal__item">Quản trị kinh doanh</li>
+          <li class="modal__item">Công nghệ thông tin</li>
+          <li class="modal__item">Ngôn ngữ Anh</li>
+          <li class="modal__item">Tài chính</li>
+        </ul>
+      </div>
+      <div class="modal__footer">
+        <button>Close</button>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed -->
+  <div id="toast"></div>
+  <section class="fix-404">
+    <div class="fix__cover">
+      <span class="fix__header">No content</span>
+      <img src="./img/bg.gif" class="fix__image" alt="">
+      <div class="fix__content">
+        <p class="fix__desc">Có vẻ như bạn đang tìm kiếm một thứ gì đó</p>
+        <p class="fix__note">Hiện tại các thiết bị máy tính bảng, điện thoại di động chưa hỗ trợ vấn đề này. Vui lòng
+          truy cập bằng máy tính, laptop để xem.</p>
+        <div class="fix-wrap__btn">
+
+          <button class="fix__btn">Xin cảm ơn</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+  </body>
+
+</html>
